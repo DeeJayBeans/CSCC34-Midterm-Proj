@@ -8,6 +8,12 @@ to setup
   ask patches with [pycor = -5] [set pcolor black]
 end
 
-to play
+to goUp
+  ask persons
+  [if ycor <= 9.5[ask persons [setxy xcor (ycor + 0.1) ]]]
   
+end
+
+to play
+  repeat 95[if ycor > -3.5 [ask persons [setxy xcor (ycor - 0.1) ]]]
 end
