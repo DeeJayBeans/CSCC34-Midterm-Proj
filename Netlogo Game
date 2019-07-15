@@ -1,1 +1,13 @@
 // Coded in Netlogo
+breed [persons person]
+to setup
+  clear-all
+  create-persons 1 [setxy -18 -3.5 set shape "person" set size 2 set heading 90]
+  ask persons [set color black]
+  ask patches [set pcolor white]
+  ask patches with [pycor = -5] [set pcolor black]
+end
+
+to play
+  
+end
